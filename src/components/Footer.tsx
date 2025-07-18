@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Logo } from './Logo';
+import { WhatsAppButton } from './WhatsAppButton';
 
 export const Footer: React.FC = () => {
   return (
@@ -82,6 +83,7 @@ export const Footer: React.FC = () => {
           <p>&copy; 2024 Vishal Creations. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
+      <WhatsAppButton />
     </footer>
   );
 };

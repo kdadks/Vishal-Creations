@@ -1,0 +1,52 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vishalcreations.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /api/internal/
+
+# Allow access to CSS and JS files
+Allow: /src/
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+
+# Block common bot traps
+Disallow: /search?
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /print/
+Disallow: /email/
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /

@@ -163,8 +163,9 @@ export const Home: React.FC = () => {
               <Link
                 to="/contact"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+                onClick={() => { setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
               >
-                Get Quote
+                Enquiries
               </Link>
             </div>
           </div>
@@ -260,61 +261,175 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Products Showcase */}
+      {/* Business Portfolio Showcase */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Our Product Range
+              Explore Our Business
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive selection of plastic raw materials for all your manufacturing needs.
+              Discover our comprehensive product portfolio, trusted partners, and extensive customer network.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'PVC Granules',
-                image: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=400',
-                description: 'High-quality PVC granules for pipes, profiles, and fittings.',
-              },
-              {
-                name: 'PP Pellets',
-                image: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=400',
-                description: 'Premium polypropylene pellets for packaging and automotive applications.',
-              },
-              {
-                name: 'HDPE Granules',
-                image: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=400',
-                description: 'Superior HDPE granules for bottles, containers, and industrial products.',
-              },
-            ].map((product, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Product Portfolio Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-48 object-cover"
+                  src="https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Product Portfolio"
+                  className="w-full h-full object-cover mix-blend-overlay"
                 />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
-                  <button className="text-blue-600 hover:text-blue-800 font-semibold">
-                    Learn More →
-                  </button>
+                <div className="absolute top-4 left-4">
+                  <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-3">
+                    <Shield className="text-white" size={32} />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Product Portfolio</h3>
+                  <p className="text-blue-100 text-sm">
+                    Premium plastic raw materials & advanced solutions
+                  </p>
                 </div>
               </div>
-            ))}
+              <div className="p-6">
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-600">Product Categories</span>
+                    <span className="text-sm font-bold text-blue-600">15+</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-4/5"></div>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Explore our comprehensive range of plastic raw materials, advanced resins, and industrial machinery.
+                </p>
+                <Link
+                  to="/products"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                >
+                  View Products
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Partners & Suppliers Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <img
+                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Partners & Suppliers"
+                  className="w-full h-full object-cover mix-blend-overlay"
+                />
+                <div className="absolute top-4 left-4">
+                  <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-3">
+                    <Users className="text-white" size={32} />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Partners & Suppliers</h3>
+                  <p className="text-green-100 text-sm">
+                    Trusted global network & strategic partnerships
+                  </p>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-600">Global Partners</span>
+                    <span className="text-sm font-bold text-green-600">50+</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full w-5/6"></div>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Meet our trusted suppliers and strategic partners who help us deliver quality materials worldwide.
+                </p>
+                <Link
+                  to="/suppliers"
+                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                >
+                  Our Partners
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Customer Network Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <img
+                  src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Customer Network"
+                  className="w-full h-full object-cover mix-blend-overlay"
+                />
+                <div className="absolute top-4 left-4">
+                  <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-3">
+                    <Award className="text-white" size={32} />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Customer Network</h3>
+                  <p className="text-purple-100 text-sm">
+                    Satisfied clients & success stories across India
+                  </p>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-600">Active Clients</span>
+                    <span className="text-sm font-bold text-purple-600">500+</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full w-full"></div>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Discover our extensive customer network and read success stories from satisfied manufacturers.
+                </p>
+                <Link
+                  to="/customers"
+                  className="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                >
+                  Our Customers
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Link>
+              </div>
+            </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <Link
-              to="/products"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 inline-flex items-center"
-            >
-              View All Products
-              <ArrowRight className="ml-2" size={20} />
-            </Link>
+
+          {/* Statistics Bar */}
+          <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                <div className="text-sm text-gray-600 font-medium">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
+                <div className="text-sm text-gray-600 font-medium">Happy Clients</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                <div className="text-sm text-gray-600 font-medium">Global Partners</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
+                <div className="text-sm text-gray-600 font-medium">Quality Assured</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -363,8 +478,9 @@ export const Home: React.FC = () => {
             <Link
               to="/contact"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+              onClick={() => { setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
             >
-              Get Quote Now
+              Enquiries
             </Link>
             <a
               href="tel:+919876543210"

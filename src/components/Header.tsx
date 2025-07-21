@@ -67,8 +67,9 @@ export const Header: React.FC = () => {
             <Link
               to="/contact"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              onClick={() => { setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
             >
-              Get Quote
+              Enquiries
             </Link>
           </div>
 
@@ -100,9 +101,9 @@ export const Header: React.FC = () => {
               <Link
                 to="/contact"
                 className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-center"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => { setIsMenuOpen(false); setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
               >
-                Get Quote
+                Enquiries
               </Link>
             </div>
           </nav>

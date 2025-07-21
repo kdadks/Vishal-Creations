@@ -32,58 +32,67 @@ export const Suppliers: React.FC = () => {
 
   const suppliers = [
     {
-      name: 'Global Polymers Ltd.',
-      location: 'Germany',
-      specialization: 'PVC & PP Materials',
-      partnership: '2018',
+      name: 'Bhansali',
+      location: 'India',
+      specialization: 'Plastic Raw Materials',
+      partnership: '2020',
       certification: 'ISO 9001:2015',
-      description: 'Leading European supplier of high-grade PVC and PP materials with advanced manufacturing capabilities.',
+      description: 'Leading supplier of high-quality plastic raw materials and polymer solutions.',
       logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     },
     {
-      name: 'Asia Pacific Resins',
-      location: 'Singapore',
-      specialization: 'HDPE & Advanced Resins',
-      partnership: '2019',
+      name: 'SABIC',
+      location: 'Saudi Arabia',
+      specialization: 'Petrochemicals & Polymers',
+      partnership: '2018',
       certification: 'ISO 14001',
-      description: 'Premier supplier of HDPE granules and specialty resins for industrial applications across Asia.',
+      description: 'Global leader in petrochemicals and diversified manufacturing with innovative polymer solutions.',
       logo: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     },
     {
-      name: 'American Chemical Corp',
-      location: 'USA',
-      specialization: 'Additives & Compounds',
-      partnership: '2020',
-      certification: 'FDA Approved',
-      description: 'Innovative chemical solutions and plastic additives for enhanced material properties.',
+      name: 'MEP Japan',
+      location: 'Japan',
+      specialization: 'Engineering Plastics',
+      partnership: '2019',
+      certification: 'JIS Certified',
+      description: 'Premium engineering plastics and advanced polymer materials for industrial applications.',
       logo: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     },
     {
-      name: 'Middle East Polymers',
-      location: 'UAE',
-      specialization: 'Petrochemical Derivatives',
-      partnership: '2017',
+      name: 'MCPP',
+      location: 'Taiwan',
+      specialization: 'PP & PE Materials',
+      partnership: '2021',
       certification: 'ISO 22000',
-      description: 'Strategic partner for petrochemical-based raw materials and polymer solutions.',
+      description: 'Specialized manufacturer of polypropylene and polyethylene materials for diverse applications.',
       logo: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     },
     {
-      name: 'Nordic Plastics AB',
-      location: 'Sweden',
-      specialization: 'Sustainable Materials',
-      partnership: '2021',
+      name: 'Lotte Chemicals',
+      location: 'South Korea',
+      specialization: 'Chemical Solutions',
+      partnership: '2017',
       certification: 'Green Certification',
-      description: 'Eco-friendly plastic materials and sustainable polymer solutions for the future.',
+      description: 'Innovative chemical solutions and sustainable polymer technologies for the future.',
       logo: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     },
     {
-      name: 'Indian Petrochem Industries',
+      name: 'Theysson Pune Machines',
       location: 'India',
-      specialization: 'Local Raw Materials',
-      partnership: '2016',
+      specialization: 'Machinery & Equipment',
+      partnership: '2022',
       certification: 'BIS Certified',
-      description: 'Domestic supplier ensuring consistent supply chain and competitive pricing for local markets.',
+      description: 'Advanced machinery and equipment solutions for plastic processing and manufacturing.',
       logo: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+    },
+    {
+      name: 'Sekisui Advancell',
+      location: 'Japan / Thailand',
+      specialization: 'Advanced Foam Materials',
+      partnership: '2023',
+      certification: 'ISO 9001:2015',
+      description: 'Leading manufacturer of advanced foam materials and cellular plastic solutions for various industries.',
+      logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
     }
   ];
 

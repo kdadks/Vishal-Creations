@@ -87,7 +87,7 @@ export const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Industrial Area, Sector 45', 'Mumbai, Maharashtra 400001'],
+      details: ['PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041'],
       description: 'Visit our headquarters',
     },
     {
@@ -98,32 +98,32 @@ export const Contact: React.FC = () => {
     },
   ];
 
-  const officeLocations = [
-    {
-      city: 'Mumbai',
-      address: '123 Industrial Area, Sector 45, Mumbai, Maharashtra 400001',
-      phone: '+91 98765 43210',
-      type: 'Head Office',
-    },
-    {
-      city: 'Delhi',
-      address: '456 Industrial Complex, Gurgaon, Haryana 122001',
-      phone: '+91 98765 43212',
-      type: 'Regional Office',
-    },
-    {
-      city: 'Bangalore',
-      address: '789 Tech Park, Electronic City, Bangalore, Karnataka 560100',
-      phone: '+91 98765 43213',
-      type: 'Regional Office',
-    },
-    {
-      city: 'Chennai',
-      address: '321 Industrial Estate, Guindy, Chennai, Tamil Nadu 600032',
-      phone: '+91 98765 43214',
-      type: 'Regional Office',
-    },
-  ];
+  // const officeLocations = [
+  //   {
+  //     city: 'Delhi',
+  //     address: 'PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041',
+  //     phone: '+91 98765 43210',
+  //     type: 'Head Office',
+  //   },
+  //   {
+  //     city: 'Delhi',
+  //     address: '456 Industrial Complex, Gurgaon, Haryana 122001',
+  //     phone: '+91 98765 43212',
+  //     type: 'Regional Office',
+  //   },
+  //   {
+  //     city: 'Bangalore',
+  //     address: '789 Tech Park, Electronic City, Bangalore, Karnataka 560100',
+  //     phone: '+91 98765 43213',
+  //     type: 'Regional Office',
+  //   },
+  //   {
+  //     city: 'Chennai',
+  //     address: '321 Industrial Estate, Guindy, Chennai, Tamil Nadu 600032',
+  //     phone: '+91 98765 43214',
+  //     type: 'Regional Office',
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen">
@@ -346,7 +346,7 @@ export const Contact: React.FC = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Office Locations</h2>
@@ -378,15 +378,15 @@ export const Contact: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Map Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Visit our headquarters in Mumbai for direct consultation and support.
+              Visit our headquarters in Delhi for direct consultation and support.
             </p>
           </div>
           
@@ -394,11 +394,11 @@ export const Contact: React.FC = () => {
             <div className="text-center">
               <MapPin className="text-gray-500 mx-auto mb-4" size={48} />
               <p className="text-gray-600 text-lg">Interactive Map</p>
-              <p className="text-gray-500">123 Industrial Area, Sector 45, Mumbai, Maharashtra 400001</p>
+              <p className="text-gray-500">PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

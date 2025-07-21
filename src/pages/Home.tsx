@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Truck, Award, Users, CheckCircle, Star } from 'lucide-react';
-import { ImageGallery } from '../components/ImageGallery';
+// ...existing code...
 
 export const Home: React.FC = () => {
   // Add structured data for homepage
@@ -56,7 +56,7 @@ export const Home: React.FC = () => {
     {
       icon: Users,
       title: 'Trusted Partner',
-      description: 'Serving 500+ manufacturers with reliable supply chain solutions.',
+      description: 'Serving 10+ manufacturers with reliable supply chain solutions.',
     },
   ];
 
@@ -81,64 +81,7 @@ export const Home: React.FC = () => {
     },
   ];
 
-  const galleryImages = [
-    {
-      id: 1,
-      src: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Industrial plastic manufacturing facility',
-      title: 'State-of-the-Art Manufacturing',
-      category: 'Facilities'
-    },
-    {
-      id: 2,
-      src: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'High-quality PVC granules',
-      title: 'Premium PVC Granules',
-      category: 'Products'
-    },
-    {
-      id: 3,
-      src: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Polypropylene pellets in production',
-      title: 'PP Pellets Production',
-      category: 'Manufacturing'
-    },
-    {
-      id: 4,
-      src: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
-      alt: 'Quality control laboratory',
-      title: 'Quality Control Lab',
-      category: 'Quality Assurance'
-    },
-    {
-      id: 5,
-      src: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
-      alt: 'Plastic raw materials warehouse',
-      title: 'Raw Materials Storage',
-      category: 'Logistics'
-    },
-    {
-      id: 6,
-      src: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
-      alt: 'Packaging and shipping department',
-      title: 'Packaging & Shipping',
-      category: 'Operations'
-    },
-    {
-      id: 7,
-      src: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
-      alt: 'Team of plastic industry experts',
-      title: 'Expert Team',
-      category: 'People'
-    },
-    {
-      id: 8,
-      src: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
-      alt: 'Sustainable plastic production',
-      title: 'Sustainable Production',
-      category: 'Environment'
-    }
-  ];
+  // ...existing code...
 
   return (
     <div className="min-h-screen">
@@ -172,7 +115,8 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Image Gallery Section */}
+      {/*
+      Image Gallery Section
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -186,6 +130,7 @@ export const Home: React.FC = () => {
           <ImageGallery images={galleryImages} autoPlay={true} autoPlayInterval={6000} />
         </div>
       </section>
+      */}
 
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
@@ -231,7 +176,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span className="text-gray-700">500+ Satisfied Clients</span>
+                  <span className="text-gray-700">10+ Satisfied Clients</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="text-green-500" size={20} />
@@ -252,9 +197,9 @@ export const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/Collarge.png"
                 alt="Industrial plastic materials"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg w-full h-auto max-w-sm mx-auto object-contain"
               />
             </div>
           </div>
@@ -277,10 +222,10 @@ export const Home: React.FC = () => {
             {/* Product Portfolio Card */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-green-600"></div>
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <img
-                  src="https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  src="/Collarge.png"
                   alt="Product Portfolio"
                   className="w-full h-full object-cover mix-blend-overlay"
                 />
@@ -291,7 +236,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Product Portfolio</h3>
-                  <p className="text-blue-100 text-sm">
+                  <p className="text-green-100 text-sm">
                     Premium plastic raw materials & advanced solutions
                   </p>
                 </div>
@@ -303,7 +248,7 @@ export const Home: React.FC = () => {
                     <span className="text-sm font-bold text-blue-600">15+</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full w-4/5"></div>
+                    <div className="bg-gradient-to-r from-blue-600 to-green-600 h-2 rounded-full w-4/5"></div>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">
@@ -311,7 +256,7 @@ export const Home: React.FC = () => {
                 </p>
                 <Link
                   to="/products"
-                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                  className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
                 >
                   View Products
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -322,7 +267,7 @@ export const Home: React.FC = () => {
             {/* Partners & Suppliers Card */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-blue-600"></div>
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <img
                   src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
@@ -336,7 +281,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Partners & Suppliers</h3>
-                  <p className="text-green-100 text-sm">
+                  <p className="text-blue-100 text-sm">
                     Trusted global network & strategic partnerships
                   </p>
                 </div>
@@ -345,10 +290,10 @@ export const Home: React.FC = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">Global Partners</span>
-                    <span className="text-sm font-bold text-green-600">50+</span>
+                    <span className="text-sm font-bold text-green-600">10+</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full w-5/6"></div>
+                    <div className="bg-gradient-to-r from-green-600 to-blue-600 h-2 rounded-full w-5/6"></div>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">
@@ -356,7 +301,7 @@ export const Home: React.FC = () => {
                 </p>
                 <Link
                   to="/suppliers"
-                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                  className="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
                 >
                   Our Partners
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -367,7 +312,7 @@ export const Home: React.FC = () => {
             {/* Customer Network Card */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-500"></div>
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 <img
                   src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
@@ -381,7 +326,7 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">Customer Network</h3>
-                  <p className="text-purple-100 text-sm">
+                  <p className="text-green-100 text-sm">
                     Satisfied clients & success stories across India
                   </p>
                 </div>
@@ -390,10 +335,10 @@ export const Home: React.FC = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">Active Clients</span>
-                    <span className="text-sm font-bold text-purple-600">500+</span>
+                    <span className="text-sm font-bold text-blue-600">10+</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full w-full"></div>
+                    <div className="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full w-full"></div>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">
@@ -401,7 +346,7 @@ export const Home: React.FC = () => {
                 </p>
                 <Link
                   to="/customers"
-                  className="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
+                  className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-green-600 transition-all duration-200 flex items-center justify-center group-hover:shadow-lg"
                 >
                   Our Customers
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -418,11 +363,11 @@ export const Home: React.FC = () => {
                 <div className="text-sm text-gray-600 font-medium">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                 <div className="text-sm text-gray-600 font-medium">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">10+</div>
                 <div className="text-sm text-gray-600 font-medium">Global Partners</div>
               </div>
               <div className="text-center">
@@ -448,14 +393,14 @@ export const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="text-yellow-400 fill-current" size={20} />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic">"{testimonial.message}"</p>
-                <div>
+                <p className="text-gray-600 mb-4 italic flex-grow">"{testimonial.message}"</p>
+                <div className="mt-auto">
                   <p className="font-semibold text-gray-800">{testimonial.name}</p>
                   <p className="text-sm text-gray-500">{testimonial.company}</p>
                 </div>

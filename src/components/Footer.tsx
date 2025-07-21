@@ -61,15 +61,16 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>123 Industrial Area, Sector 45, Mumbai, Maharashtra 400001</span>
+                <span>PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041
+</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} />
-                <span>+91 98765 43210</span>
+                <span>+91 7503131359</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} />
-                <span>info@vishalcreations.com</span>
+                <span>contact@vishalcreations.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock size={16} />

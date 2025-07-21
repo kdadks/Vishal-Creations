@@ -25,11 +25,11 @@ export const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+91 98765 43210</span>
+                <span>+91 7503131359</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>info@vishalcreations.com</span>
+                <span>contact@vishalcreations.com</span>
               </div>
             </div>
             <div className="hidden md:block">

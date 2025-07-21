@@ -81,7 +81,7 @@ export const Products: React.FC = () => {
       id: 1,
       name: 'PVC Suspension Grade',
       category: 'pvc',
-      image: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/PVC.jpeg',
       description: 'High-quality PVC suspension grade for pipes, fittings, and profiles.',
       applications: ['Pipes & Fittings', 'Profiles', 'Sheets'],
       specifications: ['K-Value: 65-67', 'Bulk Density: 0.5-0.6 g/ml', 'Volatile Matter: ≤0.3%'],
@@ -92,7 +92,7 @@ export const Products: React.FC = () => {
       id: 2,
       name: 'PP Homopolymer',
       category: 'pp',
-      image: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/polypropylene.webp',
       description: 'Premium polypropylene homopolymer for injection molding applications.',
       applications: ['Injection Molding', 'Automotive Parts', 'Packaging'],
       specifications: ['MFI: 3-35 g/10min', 'Density: 0.90-0.91 g/cm³', 'Flexural Modulus: 1400-1600 MPa'],
@@ -103,7 +103,7 @@ export const Products: React.FC = () => {
       id: 3,
       name: 'HDPE Blow Molding Grade',
       category: 'pe',
-      image: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/HDPE.webp',
       description: 'Superior HDPE grade specifically designed for blow molding applications.',
       applications: ['Bottles', 'Containers', 'Tanks'],
       specifications: ['Density: 0.950-0.965 g/cm³', 'Melt Index: 0.3-0.7 g/10min', 'ESCR: F50 > 1000 h'],
@@ -114,7 +114,7 @@ export const Products: React.FC = () => {
       id: 4,
       name: 'LDPE Film Grade',
       category: 'pe',
-      image: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/LDPE.jpg',
       description: 'Low-density polyethylene ideal for film and packaging applications.',
       applications: ['Films', 'Bags', 'Packaging'],
       specifications: ['Density: 0.918-0.930 g/cm³', 'Melt Index: 0.2-2.0 g/10min', 'Dart Impact: >150 g'],
@@ -125,7 +125,7 @@ export const Products: React.FC = () => {
       id: 5,
       name: 'GPPS General Purpose',
       category: 'ps',
-      image: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/GPPS.jpeg',
       description: 'General purpose polystyrene for various molding applications.',
       applications: ['Injection Molding', 'Thermoforming', 'Disposables'],
       specifications: ['Melt Index: 3-8 g/10min', 'Density: 1.04-1.05 g/cm³', 'Tensile Strength: 35-45 MPa'],
@@ -136,7 +136,7 @@ export const Products: React.FC = () => {
       id: 6,
       name: 'ABS High Impact Grade',
       category: 'abs',
-      image: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/ABS-GRIS.jpg',
       description: 'High-impact ABS resin for automotive and electronic applications.',
       applications: ['Automotive Parts', 'Electronics', 'Appliances'],
       specifications: ['Izod Impact: >300 J/m', 'Density: 1.03-1.06 g/cm³', 'Tensile Strength: 40-50 MPa'],
@@ -147,7 +147,7 @@ export const Products: React.FC = () => {
       id: 7,
       name: 'Calcium Carbonate',
       category: 'additives',
-      image: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'cac03.jpeg',
       description: 'High-quality calcium carbonate filler for cost-effective plastic production.',
       applications: ['Filler', 'Reinforcement', 'Cost Reduction'],
       specifications: ['Particle Size: 2-5 μm', 'Whiteness: >95%', 'Moisture: <0.3%'],
@@ -158,7 +158,7 @@ export const Products: React.FC = () => {
       id: 8,
       name: 'Titanium Dioxide',
       category: 'additives',
-      image: 'https://images.pexels.com/photos/2749501/pexels-photo-2749501.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Titanium.png',
       description: 'Premium titanium dioxide for superior opacity and whiteness.',
       applications: ['White Pigment', 'Opacity Enhancement', 'UV Protection'],
       specifications: ['TiO2 Content: >98%', 'Particle Size: 0.2-0.3 μm', 'Oil Absorption: 15-25 g/100g'],
@@ -318,13 +318,13 @@ export const Products: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
                   <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
                   
@@ -359,13 +359,10 @@ export const Products: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex space-x-2">
-                    <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm">
+                  <div className="flex w-full mt-auto">
+                    <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm">
                       <ShoppingCart size={16} className="mr-2" />
-                      Get Quote
-                    </button>
-                    <button className="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors duration-200 flex items-center justify-center">
-                      <FileText size={16} />
+                      Enquiries
                     </button>
                   </div>
                 </div>

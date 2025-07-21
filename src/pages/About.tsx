@@ -4,11 +4,11 @@ import { Shield, Award, Users, Target, Eye, Heart } from 'lucide-react';
 export const About: React.FC = () => {
   // Add page-specific meta tags and structured data
   React.useEffect(() => {
-    document.title = "About Vishal Creations - 15+ Years in Plastic Raw Materials | Company History";
+    document.title = "About Vishal Creations - High-Performance Polymers & Engineering Plastics | Since 2017";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about Vishal Creations - 15+ years experience in plastic raw materials supply. ISO certified company serving 500+ manufacturers across India with PVC, PP, HDPE materials.');
+      metaDescription.setAttribute('content', 'Established in 2017, Vishal Creations is a trusted distributor of high-performance polymers and specialty engineering plastics. Serving electronics, automotive, and manufacturing industries across India with Nylon, Polycarbonate, PBT materials.');
     }
     
     const script = document.createElement('script');
@@ -17,13 +17,13 @@ export const About: React.FC = () => {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "About Vishal Creations",
-      "description": "Learn about Vishal Creations - 15+ years experience in plastic raw materials supply in India.",
+      "description": "Established in 2017, Vishal Creations is a trusted distributor of high-performance polymers and specialty engineering plastics in India.",
       "url": "https://vishalcreations.com/about",
       "mainEntity": {
         "@type": "Organization",
         "name": "Vishal Creations",
-        "foundingDate": "2009",
-        "numberOfEmployees": "50-100"
+        "foundingDate": "2017",
+        "numberOfEmployees": "25-50"
       }
     });
     document.head.appendChild(script);
@@ -37,42 +37,42 @@ export const About: React.FC = () => {
 
   const values = [
     {
-      icon: Shield,
-      title: 'Quality Assurance',
-      description: 'We maintain the highest standards in all our products through rigorous testing and quality control processes.',
-    },
-    {
-      icon: Award,
-      title: 'Excellence',
-      description: 'Committed to delivering exceptional products and services that exceed customer expectations.',
-    },
-    {
-      icon: Users,
-      title: 'Customer Focus',
-      description: 'Our clients are at the heart of everything we do, driving our continuous improvement and innovation.',
-    },
-    {
-      icon: Target,
-      title: 'Reliability',
-      description: 'Consistent delivery, transparent communication, and dependable partnerships built on trust.',
-    },
+        icon: Shield,
+        title: 'Quality Assurance',
+        description: 'We maintain the highest standards in all our high-performance polymers through rigorous testing and quality control processes.',
+      },
+      {
+        icon: Award,
+        title: 'Innovation',
+        description: 'Committed to delivering cutting-edge specialty engineering plastics that meet evolving industrial demands.',
+      },
+      {
+        icon: Users,
+        title: 'Industry Focus',
+        description: 'Specialized in serving electronics, automotive, and manufacturing industries with tailored polymer solutions.',
+      },
+      {
+        icon: Target,
+        title: 'Global Vision',
+        description: 'Expanding horizons beyond conventional materials to tap into global markets with innovative solutions.',
+      },
   ];
 
   const certifications = [
     'ISO 9001:2015 - Quality Management System',
     'ISO 14001:2015 - Environmental Management System',
-    'OHSAS 18001 - Occupational Health and Safety',
-    'BIS Certification - Bureau of Indian Standards',
-    'ROHS Compliance - Environmental Standards',
+    'REACH Compliance - Chemical Safety',
+    'RoHS Compliance - Environmental Standards',
+    'Automotive Industry Standards - TS 16949',
   ];
 
   const milestones = [
-    { year: '2009', event: 'Company Founded', description: 'Vishal Creations established with a vision to supply premium plastic raw materials.' },
-    { year: '2012', event: 'ISO Certification', description: 'Achieved ISO 9001:2015 certification for quality management systems.' },
-    { year: '2015', event: 'Pan-India Expansion', description: 'Expanded operations to serve clients across all major cities in India.' },
-    { year: '2018', event: '500+ Clients', description: 'Reached milestone of serving over 500 satisfied clients nationwide.' },
-    { year: '2020', event: 'Digital Transformation', description: 'Implemented advanced ERP systems and digital order management.' },
-    { year: '2024', event: 'Industry Leadership', description: 'Recognized as a leading supplier in the plastic raw materials industry.' },
+    { year: '2017', event: 'Company Founded', description: 'Vishal Creations established with a vision to distribute high-performance polymers and specialty engineering plastics.' },
+    { year: '2018', event: 'Industry Partnerships', description: 'Established strong network of suppliers and distributors across India.' },
+    { year: '2020', event: 'Sector Expansion', description: 'Expanded to serve electronics, automotive, and manufacturing industries nationwide.' },
+    { year: '2022', event: 'Product Diversification', description: 'Added Nylon, Polycarbonate, PBT, and mold release agents to product portfolio.' },
+    { year: '2023', event: 'Quality Excellence', description: 'Achieved industry recognition for consistent delivery of premium polymer materials.' },
+    { year: '2024', event: 'Global Vision', description: 'Initiated expansion strategy to tap into global markets beyond conventional materials.' },
   ];
 
   return (
@@ -82,7 +82,7 @@ export const About: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">About Vishal Creations</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
-            Your trusted partner in the plastic raw materials industry, delivering excellence through quality, reliability, and innovation.
+            Your trusted partner in high-performance polymers and specialty engineering plastics, delivering excellence through innovation and quality since 2017.
           </p>
         </div>
       </section>
@@ -94,13 +94,13 @@ export const About: React.FC = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 2009, Vishal Creations began as a small venture with a big vision: to become India's most trusted supplier of plastic raw materials. What started as a local operation has grown into a nationwide network serving over 500 manufacturers across diverse industries.
+                Established in 2017, Vishal Creations is a trusted name in the distribution and trading of high-performance polymers and specialty engineering plastics in India. What began as a focused venture has evolved into a specialized distributor serving critical industries across the nation.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our journey has been marked by unwavering commitment to quality, customer satisfaction, and continuous innovation. Today, we stand as a testament to the power of dedication, hard work, and the relentless pursuit of excellence.
+                We serve industries such as electronics, automotive, and manufacturing, offering a wide range of premium materials including Nylon, Polycarbonate, PBT, and mold release agents, designed to meet diverse industrial requirements. Our strong network of suppliers and distributors across the country ensures consistent delivery of quality products to our clientele.
               </p>
               <p className="text-lg text-gray-600">
-                With over 15 years of industry experience, we have built lasting relationships with our clients based on trust, reliability, and mutual growth. Our team of experts works tirelessly to ensure that every product meets the highest standards of quality and performance.
+                Driven by a vision of growth and innovation, Vishal Creations is expanding its horizons beyond conventional plastic raw materials to tap into global markets. By prioritizing quality and leveraging our expertise, we are committed to meeting the evolving demands of modern industries while establishing a reputation for reliability and excellence in the polymer distribution sector.
               </p>
             </div>
             <div className="relative">
@@ -124,7 +124,7 @@ export const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
               <p className="text-gray-600">
-                To provide superior quality plastic raw materials that enable manufacturers to create innovative products while maintaining the highest standards of quality, safety, and environmental responsibility.
+                To provide superior quality high-performance polymers and specialty engineering plastics that enable manufacturers to create innovative products while maintaining the highest standards of quality, safety, and environmental responsibility.
               </p>
             </div>
             <div className="text-center">
@@ -133,7 +133,7 @@ export const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
               <p className="text-gray-600">
-                To be the leading supplier of plastic raw materials in India, recognized for our commitment to excellence, innovation, and sustainable business practices that benefit our customers, communities, and environment.
+                To be the leading distributor of high-performance polymers and specialty engineering plastics in India, recognized for our commitment to innovation and expanding into global markets while serving diverse industrial requirements.
               </p>
             </div>
             <div className="text-center">
@@ -142,7 +142,7 @@ export const About: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
               <p className="text-gray-600">
-                Integrity, quality, customer focus, innovation, and sustainability guide every aspect of our business. We believe in building long-term relationships based on trust and mutual respect.
+                Quality, innovation, industry expertise, and global vision guide every aspect of our business. We believe in building strong partnerships with suppliers and distributors while serving specialized industrial sectors.
               </p>
             </div>
           </div>
@@ -223,40 +223,40 @@ export const About: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Vishal Creations?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We stand out in the industry through our unwavering commitment to quality and customer satisfaction.
+              We specialize in high-performance polymers and engineering plastics, serving critical industries with innovative solutions and reliable distribution networks.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: '15+ Years Experience',
-                description: 'Deep industry knowledge and expertise built over years of dedicated service.',
-                number: '15+'
+                title: '7+ Years Experience',
+                description: 'Specialized expertise in high-performance polymers and engineering plastics since 2017.',
+                number: '7+'
               },
               {
-                title: '500+ Satisfied Clients',
-                description: 'Trusted by manufacturers across India for our reliability and quality.',
-                number: '500+'
+                title: 'Multi-Industry Focus',
+                description: 'Serving electronics, automotive, and manufacturing sectors with tailored solutions.',
+                number: '3+'
               },
               {
-                title: '99.5% On-Time Delivery',
-                description: 'Efficient logistics and supply chain management ensuring timely deliveries.',
-                number: '99.5%'
+                title: '99% Quality Standards',
+                description: 'Consistent delivery of premium materials meeting stringent industrial requirements.',
+                number: '99%'
               },
               {
-                title: '24/7 Customer Support',
-                description: 'Round-the-clock assistance and technical support for all your needs.',
-                number: '24/7'
-              },
-              {
-                title: 'Pan-India Presence',
-                description: 'Nationwide network ensuring seamless service across all major cities.',
+                title: 'Nationwide Network',
+                description: 'Strong supplier and distributor network ensuring reliable material availability.',
                 number: 'Pan-India'
               },
               {
-                title: 'Quality Assurance',
-                description: 'Rigorous testing and quality control processes for every product.',
+                title: 'Global Expansion',
+                description: 'Expanding horizons to tap into international markets beyond conventional materials.',
+                number: 'Global'
+              },
+              {
+                title: 'Premium Materials',
+                description: 'Specialized in Nylon, Polycarbonate, PBT, and advanced mold release agents.',
                 number: '100%'
               },
             ].map((item, index) => (

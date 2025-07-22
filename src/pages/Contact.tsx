@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@vishalcreations.com'],
+      details: ['contact@vishalcreations.com'],
       description: 'Send us your inquiries',
     },
     {

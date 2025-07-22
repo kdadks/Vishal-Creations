@@ -12,9 +12,9 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = "Vishal Creations - Premium Plastic Raw Materials Supplier in India",
-  description = "Leading supplier of high-quality plastic raw materials in India. ISO certified PVC granules, PP pellets, HDPE for manufacturers. 15+ years experience, 500+ clients.",
-  keywords = "plastic raw materials supplier India, PVC granules, PP pellets, HDPE granules, plastic materials manufacturer",
+  title = "Vishal Creations - Premium Plastic & Chemical Raw Materials Supplier in India",
+  description = "Leading supplier of high-quality plastic & chemical raw materials in India. ISO certified PVC granules, PP pellets, HDPE for manufacturers. 15+ years experience, 500+ clients.",
+  keywords = "plastic & chemical raw materials supplier India, PVC granules, PP pellets, HDPE granules, plastic materials supplier, chemical raw materials, Vishal Creations",
   canonical = "https://vishalcreations.com",
   ogImage = "https://vishalcreations.com/og-image.jpg",
   ogType = "website",

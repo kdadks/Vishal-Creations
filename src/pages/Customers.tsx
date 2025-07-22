@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Building, MapPin, Star, TrendingUp, Users, Award, Target, Heart } from 'lucide-react';
 
 export const Customers: React.FC = () => {
+  const navigate = useNavigate();
+  
   // Add page-specific SEO and structured data
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -237,7 +240,6 @@ export const Customers: React.FC = () => {
                 <div key={index} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-purple-300 transition-colors">
                   <div>
                     <h4 className="font-semibold text-gray-800">{industry.name}</h4>
-                    <p className="text-sm text-gray-600">{industry.count} customers</p>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-purple-600">{industry.percentage}%</div>
@@ -294,11 +296,17 @@ export const Customers: React.FC = () => {
             Become part of our growing family of successful manufacturers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+            <button 
+              onClick={() => navigate('/contact#send-message')}
+              className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
+            >
               <Heart className="mr-2" size={20} />
               Start Your Journey
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200">
+            <button 
+              onClick={() => navigate('/contact#send-message')}
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
+            >
               Contact Our Team
             </button>
           </div>

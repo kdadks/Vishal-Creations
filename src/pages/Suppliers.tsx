@@ -51,25 +51,14 @@ export const Suppliers: React.FC = () => {
       description: 'Global leader in petrochemicals and diversified manufacturing with innovative polymer solutions.',
       logo: '/Miti.png'
     },
-
     {
-      name: 'SEKISUI CHEMICALS',
-      location: 'Japan',
-      specialization: 'Chemical Solutions',
-      partnership: '2022',
-      certification: 'BIS Certified',
-      description: 'Advanced machinery and equipment solutions for plastic processing and manufacturing.',
-      logo: '/Sekisui.png'
-    },
-    {
-      name: 'Advancell',
+      name: 'SEKISUI CHEMICAL CO., LTD.',
       location: 'Japan / Thailand',
-      specialization: 'Advanced Foam Materials',
+      specialization: 'Plastic and Chemical Materials',
       partnership: '2023',
       certification: 'ISO 9001:2015',
-      description: 'Leading manufacturer of advanced foam materials and cellular plastic solutions for various industries.',
-      logo: ['/Ske 2.png'],
-      
+      description: 'Leading manufacturer of advanced foam materials and cellular plastic solutions for various industries through their Advancell division.',
+      logo: ['/Sekisui.png','/Ske 2.png'],
     }
   ];
 
@@ -144,45 +133,52 @@ export const Suppliers: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {suppliers.map((supplier, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                {Array.isArray(supplier.logo) ? (
-                  <div className="flex justify-center gap-2 py-2">
-                    {supplier.logo.map((logoSrc, i) => (
-                      <img
-                        key={i}
-                        src={logoSrc}
-                        alt={supplier.name + ' logo ' + (i + 1)}
-                        className="h-64 max-w-[280px] object-contain"
-                      />
-                    ))}
-                  </div>
-                ) : (
-                  <img
-                    src={supplier.logo}
-                    alt={supplier.name}
-                    className="w-full h-64 max-w-[280px] mx-auto object-contain"
-                  />
-                )}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{supplier.name}</h3>
+              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                {/* Logo Section - Fixed height container */}
+                <div className="h-40 flex justify-center items-center bg-gray-50 p-2">
+                  {Array.isArray(supplier.logo) ? (
+                    <div className="flex justify-center items-center gap-2 w-full h-full">
+                      {supplier.logo.map((logoSrc, i) => (
+                        <img
+                          key={i}
+                          src={logoSrc}
+                          alt={supplier.name + ' logo ' + (i + 1)}
+                          className="h-30 max-w-[100px] object-contain"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <img
+                      src={supplier.logo}
+                      alt={supplier.name}
+                      className={`object-contain ${supplier.name === 'Mitsubishi Engineering - Plastics Corporation' ? 'h-42 max-w-[200px]' : 'h-32 max-w-[200px]'}`}
+                    />
+                  )}
+                </div>
+                
+                {/* Content Section */}
+                <div className="p-6 flex-1 flex flex-col text-center">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{supplier.name}</h3>
                   
-                  <div className="flex items-center text-gray-600 mb-2">
-                    <MapPin size={16} className="mr-2" />
+                  <div className="flex items-center justify-center text-gray-600 mb-2">
+                    <MapPin size={16} className="mr-2 flex-shrink-0" />
                     <span className="text-sm">{supplier.location}</span>
                   </div>
                   
-                  <div className="flex items-center text-gray-600 mb-2">
-                    <Calendar size={16} className="mr-2" />
+                  <div className="flex items-center justify-center text-gray-600 mb-3">
+                    <Calendar size={16} className="mr-2 flex-shrink-0" />
                     <span className="text-sm">Partner since {supplier.partnership}</span>
                   </div>
                   
-                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">
-                    {supplier.certification}
+                  <div className="mb-3">
+                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">
+                      {supplier.certification}
+                    </span>
                   </div>
                   
-                  <p className="text-gray-600 text-sm mb-4">{supplier.description}</p>
+                  <p className="text-gray-600 text-sm mb-4 flex-1">{supplier.description}</p>
                   
-                  <div className="border-t pt-4">
+                  <div className="border-t pt-4 mt-auto">
                     <h4 className="font-semibold text-gray-700 mb-2">Specialization:</h4>
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">
                       {supplier.specialization}

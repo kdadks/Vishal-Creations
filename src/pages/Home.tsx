@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
     script.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Vishal Creations - Premium Plastic Raw Materials Supplier",
+      "name": "Vishal Creations - Premium Plastic & Chemical Raw Materials Supplier",
       "description": "Leading supplier of high-quality plastic raw materials in India. ISO certified PVC granules, PP pellets, HDPE for manufacturers.",
       "url": "https://vishalcreations.com",
       "mainEntity": {
@@ -150,13 +150,13 @@ export const Home: React.FC = () => {
                 <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 leading-tight">
                   <span className="block text-white drop-shadow-2xl">Premium</span>
                   <span className="block bg-gradient-to-r from-green-300 to-blue-200 bg-clip-text text-transparent">
-                    Plastic Raw Materials
+                    Plastic & Chemical Raw Materials
                   </span>
                   <span className="block text-white drop-shadow-2xl">Supplier</span>
                 </h1>
                 
                 <p className="text-base lg:text-lg mb-6 text-blue-100 drop-shadow-lg leading-relaxed max-w-2xl">
-                  Supplying high-quality plastic materials to diverse industries manufacturers across India with 
+                  Supplying high-quality plastic & chemical raw materials to diverse industries manufacturers across India with 
                   <span className="font-semibold text-green-200"> unmatched reliability</span> and 
                   <span className="font-semibold text-green-200"> service excellence</span>.
                 </p>
@@ -247,10 +247,10 @@ export const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Leading Supplier of Plastic Raw Materials
+                Leading Supplier of Plastic & Chemical Raw Materials
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Vishal Creations has been at the forefront of the plastic raw materials industry for over 15 years. We specialize in providing high-quality materials that meet the diverse needs of manufacturers across various industries.
+                Vishal Creations has been at the forefront of the plastic & chemical raw materials industry for over 8 years. We specialize in providing high-quality materials that meet the diverse needs of manufacturers across various industries.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center space-x-2">

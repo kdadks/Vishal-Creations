@@ -49,16 +49,70 @@ export const Suppliers: React.FC = () => {
       partnership: '2018',
       certification: 'ISO 14001',
       description: 'Global leader in petrochemicals and diversified manufacturing with innovative polymer solutions.',
-      logo: '/Miti.png'
+      logo: '/Mit Pla.png'
     },
     {
       name: 'SEKISUI CHEMICAL CO., LTD.',
       location: 'Japan / Thailand',
       specialization: 'Plastic and Chemical Materials',
-      partnership: '2023',
+      partnership: '2024',
       certification: 'ISO 9001:2015',
       description: 'Leading manufacturer of advanced foam materials and cellular plastic solutions for various industries through their Advancell division.',
       logo: ['/Sekisui.png','/Ske 2.png'],
+    },
+    {
+      name: 'Mitsubishi Chemical Group',
+      location: 'Japan',
+      specialization: 'High-Performance Engineering Materials',
+      partnership: '2021',
+      certification: 'ISO 9001:2015',
+      description: 'Global chemical company providing innovative high-performance engineering plastics and advanced materials for automotive, electronics, and industrial applications.',
+      logo: '/Mit Ch.png',
+    },
+    {
+      name: 'Theysohn Extrusion',
+      location: 'Germany',
+      specialization: 'Extrusion Technology & Equipment',
+      partnership: '2022',
+      certification: 'ISO 9001:2015',
+      description: 'Leading manufacturer of extrusion lines and processing equipment for plastic materials, providing innovative solutions for the plastics industry.',
+      logo: '/Thy.png'
+    },
+    {
+      name: 'KuibyshevAzot PJSC',
+      location: 'Russia',
+      specialization: 'Polyamide-6 Production',
+      partnership: '2019',
+      certification: 'ISO 14001',
+      description: 'Major nylon supplier specializing in Polyamide-6 production with extensive experience in nitrogen-based chemical products and polymer manufacturing.',
+      logo: '/Kui.png'
+    },
+    {
+      name: 'Celanse',
+      location: 'USA',
+      specialization: 'Hytrel® TPC & Advanced Polymers',
+      partnership: '2020',
+      certification: 'ISO 9001:2015',
+      description: 'Global leader in specialty chemicals providing Hytrel® thermoplastic copolyester and high-performance materials for demanding applications.',
+      logo: '/Cleanse.png'
+    },
+    {
+      name: 'Polyurethane Systems',
+      location: 'Germany / USA',
+      specialization: 'Polyurethane Elastomers',
+      partnership: '2021',
+      certification: 'ISO 9001:2015',
+      description: 'Specialized manufacturer of polyurethane elastomer systems, offering versatile solutions for industrial applications requiring durability and flexibility.',
+      logo: '/Poly.png'
+    },
+    {
+      name: 'CHIMEI Corporation',
+      location: 'Taiwan',
+      specialization: 'Styrenic Polymers & Engineering Plastics',
+      partnership: '2022',
+      certification: 'ISO 14001',
+      description: 'Leading petrochemical company in Asia, specializing in styrenic polymers, engineering plastics, and synthetic rubber production.',
+      logo: '/Chimei.png'
     }
   ];
 
@@ -204,11 +258,11 @@ export const Suppliers: React.FC = () => {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
                 <div className="text-gray-600">Countries</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">20+</div>
                 <div className="text-gray-600">Suppliers</div>
               </div>
               <div>

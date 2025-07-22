@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Logo className="h-12 w-auto mb-4" variant="light" />
+            <Logo className="h-12 w-auto mb-4" />
             <p className="text-gray-300 mb-4">
               Leading supplier of premium plastic raw materials for manufacturers. 
               Quality, reliability, and excellence in every delivery.

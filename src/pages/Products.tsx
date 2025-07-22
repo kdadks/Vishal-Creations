@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Search, Filter, ShoppingCart, FileText, Award, Shield, Package, Cog } from 'lucide-react';
 
 export const Products: React.FC = () => {
+  const navigate = useNavigate();
+  
   // Add page-specific SEO and structured data
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -75,6 +78,10 @@ export const Products: React.FC = () => {
   React.useEffect(() => {
     setSelectedCategory('all');
   }, [activeTab]);
+
+  const handleEnquiry = () => {
+    navigate('/contact#send-message');
+  };
 
   const products = [
     {
@@ -360,7 +367,10 @@ export const Products: React.FC = () => {
                   </div>
 
                   <div className="flex w-full mt-auto">
-                    <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm">
+                    <button 
+                      onClick={handleEnquiry}
+                      className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center text-sm"
+                    >
                       <ShoppingCart size={16} className="mr-2" />
                       Enquiries
                     </button>
@@ -433,10 +443,16 @@ export const Products: React.FC = () => {
             Our technical team can help you find the perfect material for your specific application.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+            <button 
+              onClick={handleEnquiry}
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            >
               Contact Technical Team
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200">
+            <button 
+              onClick={handleEnquiry}
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+            >
               Request Samples
             </button>
           </div>

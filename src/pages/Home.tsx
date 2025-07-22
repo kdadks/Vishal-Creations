@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Truck, Award, Users, CheckCircle, Star } from 'lucide-react';
 // ...existing code...
 
 export const Home: React.FC = () => {
+  // Popup modal state
+  const [showPopup, setShowPopup] = useState(true);
+  const [minimized, setMinimized] = useState(false);
   // Add structured data for homepage
   React.useEffect(() => {
     const script = document.createElement('script');
@@ -84,35 +87,115 @@ export const Home: React.FC = () => {
   // ...existing code...
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+          <div className="bg-white rounded-lg shadow-2xl p-6 max-w-2xl w-full relative">
+            <button
+              className="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl font-bold focus:outline-none"
+              onClick={() => {
+                setShowPopup(false);
+                setMinimized(true);
+              }}
+              aria-label="Close popup"
+            >
+              &times;
+            </button>
+            <img
+              src="/event.jpeg"
+              alt="Event"
+              className="rounded-lg w-full h-auto object-contain mb-2"
+              style={{ maxHeight: '80vh' }}
+            />
+          </div>
+        </div>
+      )}
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-green-600 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Premium Plastic Raw Materials
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Supplying high-quality plastic materials to manufacturers across India with unmatched reliability and service excellence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/products"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
-              >
-                View Products
-                <ArrowRight className="ml-2" size={20} />
-              </Link>
-              <Link
-                to="/contact"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
-                onClick={() => { setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
-              >
-                Enquiries
-              </Link>
+      <section className="relative bg-gradient-to-br from-blue-700 via-blue-600 to-green-600 text-white py-12 overflow-hidden">
+        {/* Background Pattern Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-5"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center min-h-[350px]">
+            
+            {/* Main Content Area - Left Side */}
+            <div className="lg:col-span-7 space-y-4">
+              {/* Event Image - Top Left Position */}
+              {minimized && !showPopup && (
+                <div className="flex justify-start mb-4">
+                  <div
+                    className="cursor-pointer group"
+                    onClick={() => setShowPopup(true)}
+                    title="Show Event"
+                  >
+                    <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-2 shadow-lg hover:bg-opacity-30 transition-all duration-300">
+                      <img
+                        src="/event.jpeg"
+                        alt="Event"
+                        className="w-32 h-24 rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300 object-cover"
+                      />
+                      <div className="text-center mt-1">
+                        <div className="text-xs font-bold text-white bg-blue-600 bg-opacity-80 px-2 py-1 rounded-full inline-block">
+                          VIEW EVENT
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              <div className="text-center lg:text-left">
+                <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 leading-tight">
+                  <span className="block text-white drop-shadow-2xl">Premium</span>
+                  <span className="block bg-gradient-to-r from-green-300 to-blue-200 bg-clip-text text-transparent">
+                    Plastic Raw Materials
+                  </span>
+                  <span className="block text-white drop-shadow-2xl">Supplier</span>
+                </h1>
+                
+                <p className="text-base lg:text-lg mb-6 text-blue-100 drop-shadow-lg leading-relaxed max-w-2xl">
+                  Supplying high-quality plastic materials to diverse industries manufacturers across India with 
+                  <span className="font-semibold text-green-200"> unmatched reliability</span> and 
+                  <span className="font-semibold text-green-200"> service excellence</span>.
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center">
+                <Link
+                  to="/products"
+                  className="group bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 hover:text-blue-700 transition-all duration-300 flex items-center justify-center shadow-xl min-w-[180px] h-[50px] whitespace-nowrap transform hover:scale-105"
+                >
+                  View Products
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={18} />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="group border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center shadow-xl min-w-[180px] h-[50px] whitespace-nowrap transform hover:scale-105"
+                  onClick={() => { setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 0); }}
+                >
+                  Enquiries
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side - Hero Image */}
+            <div className="lg:col-span-5">
+              {/* Main Hero Image */}
+              <img
+                src="/Hero.png"
+                alt="Vishal Creations Hero"
+                className="w-full h-auto max-h-[400px] object-contain mx-auto rounded-2xl"
+              />
             </div>
           </div>
         </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute top-8 right-8 w-24 h-24 bg-white bg-opacity-10 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-8 left-8 w-32 h-32 bg-green-500 bg-opacity-10 rounded-full blur-2xl"></div>
       </section>
 
       {/*

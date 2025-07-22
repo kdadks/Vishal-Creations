@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041
+                <span>Plot No. K11 Old Plot NO 45 Khasra No. 13/17, 3rd Floor Adhyapak Nagar,Najafgarh Road Nangloi,West Delhi, Delhi, 110041
 </span>
               </div>
               <div className="flex items-center space-x-3">
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Vishal Creations. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2025 kdadks service private limited. All rights reserved.</p>
         </div>
       </div>
       <WhatsAppButton />

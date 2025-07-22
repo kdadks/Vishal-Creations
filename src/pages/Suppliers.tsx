@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, Award, Truck, CheckCircle, MapPin, Calendar } from 'lucide-react';
+import { url } from 'inspector';
 
 export const Suppliers: React.FC = () => {
   // Add page-specific SEO and structured data
@@ -32,67 +33,43 @@ export const Suppliers: React.FC = () => {
 
   const suppliers = [
     {
-      name: 'Bhansali',
-      location: 'India',
+      name: 'Global Polyacetal',
+      location: 'Japan',
       specialization: 'Plastic Raw Materials',
       partnership: '2020',
       certification: 'ISO 9001:2015',
       description: 'Leading supplier of high-quality plastic raw materials and polymer solutions.',
-      logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+      logo: '/Global Poly.png',
+      url: 'https://www.gpac.co.jp/en/'
     },
     {
-      name: 'SABIC',
-      location: 'Saudi Arabia',
-      specialization: 'Petrochemicals & Polymers',
+      name: 'Mitsubishi Engineering - Plastics Corporation',
+      location: 'Japan',
+      specialization: 'Engineering Plastics',
       partnership: '2018',
       certification: 'ISO 14001',
       description: 'Global leader in petrochemicals and diversified manufacturing with innovative polymer solutions.',
-      logo: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+      logo: '/Miti.png'
     },
+
     {
-      name: 'MEP Japan',
+      name: 'SEKISUI CHEMICALS',
       location: 'Japan',
-      specialization: 'Engineering Plastics',
-      partnership: '2019',
-      certification: 'JIS Certified',
-      description: 'Premium engineering plastics and advanced polymer materials for industrial applications.',
-      logo: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
-    },
-    {
-      name: 'MCPP',
-      location: 'Taiwan',
-      specialization: 'PP & PE Materials',
-      partnership: '2021',
-      certification: 'ISO 22000',
-      description: 'Specialized manufacturer of polypropylene and polyethylene materials for diverse applications.',
-      logo: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
-    },
-    {
-      name: 'Lotte Chemicals',
-      location: 'South Korea',
       specialization: 'Chemical Solutions',
-      partnership: '2017',
-      certification: 'Green Certification',
-      description: 'Innovative chemical solutions and sustainable polymer technologies for the future.',
-      logo: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
-    },
-    {
-      name: 'Theysson Pune Machines',
-      location: 'India',
-      specialization: 'Machinery & Equipment',
       partnership: '2022',
       certification: 'BIS Certified',
       description: 'Advanced machinery and equipment solutions for plastic processing and manufacturing.',
-      logo: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+      logo: '/Sekisui.png'
     },
     {
-      name: 'Sekisui Advancell',
+      name: 'Advancell',
       location: 'Japan / Thailand',
       specialization: 'Advanced Foam Materials',
       partnership: '2023',
       certification: 'ISO 9001:2015',
       description: 'Leading manufacturer of advanced foam materials and cellular plastic solutions for various industries.',
-      logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop'
+      logo: ['/Ske 2.png'],
+      
     }
   ];
 
@@ -168,11 +145,24 @@ export const Suppliers: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {suppliers.map((supplier, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src={supplier.logo}
-                  alt={supplier.name}
-                  className="w-full h-48 object-cover"
-                />
+                {Array.isArray(supplier.logo) ? (
+                  <div className="flex justify-center gap-2 py-2">
+                    {supplier.logo.map((logoSrc, i) => (
+                      <img
+                        key={i}
+                        src={logoSrc}
+                        alt={supplier.name + ' logo ' + (i + 1)}
+                        className="h-64 max-w-[280px] object-contain"
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <img
+                    src={supplier.logo}
+                    alt={supplier.name}
+                    className="w-full h-64 max-w-[280px] mx-auto object-contain"
+                  />
+                )}
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{supplier.name}</h3>
                   
@@ -222,7 +212,7 @@ export const Suppliers: React.FC = () => {
                 <div className="text-gray-600">Countries</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                 <div className="text-gray-600">Suppliers</div>
               </div>
               <div>
@@ -248,12 +238,12 @@ export const Suppliers: React.FC = () => {
             Join our global network of suppliers and partners. Let's build something great together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+            <a href="/contact#send-message" className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 block text-center">
               Become a Partner
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200">
+            </a>
+            <a href="/contact#send-message" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200 block text-center">
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </section>

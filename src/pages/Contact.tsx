@@ -35,6 +35,18 @@ export const Contact: React.FC = () => {
     };
   }, []);
 
+  // Handle hash navigation to scroll to send message section
+  React.useEffect(() => {
+    if (window.location.hash === '#send-message') {
+      setTimeout(() => {
+        const element = document.getElementById('send-message');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -75,19 +87,19 @@ export const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 98765 43210', '+91 98765 43211'],
+      details: ['+91 7503131359'],
       description: 'Call us for immediate assistance',
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@vishalcreations.com', 'sales@vishalcreations.com'],
+      details: ['info@vishalcreations.com'],
       description: 'Send us your inquiries',
     },
     {
       icon: MapPin,
       title: 'Address',
-      details: ['PLOT NO K11 OLD PLOT NO 45 KHASRA NO 13/17, 3RD FLOOR ADHYAPAK NAGAR,NAJAFGARH ROAD NANGLOI DELHI, DELHI, WEST DELHI, DELHI, 110041'],
+      details: ['Plot No. K11 Old Plot NO 45 Khasra No. 13/17,rd Floor Adhyapak Nagar,Najafgarh Road Nangloi,West Delhi, Delhi, 110041'],
       description: 'Visit our headquarters',
     },
     {
@@ -164,7 +176,7 @@ export const Contact: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
+            <div id="send-message">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
               
               {isSubmitted ? (

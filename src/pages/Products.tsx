@@ -179,7 +179,7 @@ export const Products: React.FC = () => {
       id: 9,
       name: 'Advanced Expanded Molecular Resin',
       category: 'advanced',
-      image: 'https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Sekisui.png',
       description: 'Premium expanded molecular resin specifically engineered for shoe manufacturing applications.',
       applications: ['Shoe Soles', 'Athletic Footwear', 'Safety Boots', 'Casual Footwear'],
       specifications: ['Density: 0.15-0.25 g/cm³', 'Compression Set: <25%', 'Hardness: 35-55 Shore A'],
@@ -218,17 +218,6 @@ export const Products: React.FC = () => {
       specifications: ['Thickness: 35-65 microns', 'Width: 12-72mm', 'Adhesion: >8 N/25mm'],
       price: 'Request Quote',
       minOrder: '500 Kg',
-    },
-    {
-      id: 13,
-      name: 'Specialty Plastic Resin',
-      category: 'advanced',
-      image: 'https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=400',
-      description: 'High-performance specialty plastic resins for demanding industrial applications.',
-      applications: ['Automotive Components', 'Aerospace Parts', 'Medical Devices', 'Electronics'],
-      specifications: ['Heat Deflection: >150°C', 'Impact Strength: >50 kJ/m²', 'Chemical Resistance: Excellent'],
-      price: 'Request Quote',
-      minOrder: '250 Kg',
     },
   ];
 
@@ -353,17 +342,6 @@ export const Products: React.FC = () => {
                         <li key={index}>• {spec}</li>
                       ))}
                     </ul>
-                  </div>
-
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <p className="text-sm text-gray-500">Min Order:</p>
-                      <p className="font-semibold text-gray-800">{product.minOrder}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-500">Price:</p>
-                      <p className="font-semibold text-blue-600">{product.price}</p>
-                    </div>
                   </div>
 
                   <div className="flex w-full mt-auto">

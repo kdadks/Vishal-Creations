@@ -105,7 +105,7 @@ export const About: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3735637/pexels-photo-3735637.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/Hero.png"
                 alt="Industrial facility"
                 className="rounded-lg shadow-lg"
               />

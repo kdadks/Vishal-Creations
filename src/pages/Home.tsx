@@ -442,16 +442,16 @@ export const Home: React.FC = () => {
           <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
-                <div className="text-sm text-gray-600 font-medium">Years Experience</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
+                <div className="text-sm text-gray-600 font-medium">Years Experience in EXIM Business</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
-                <div className="text-sm text-gray-600 font-medium">Happy Clients</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">Growing</div>
+                <div className="text-sm text-gray-600 font-medium">Happy Client Network</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">10+</div>
-                <div className="text-sm text-gray-600 font-medium">Global Partners</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">Increasing</div>
+                <div className="text-sm text-gray-600 font-medium">Global Partners Network</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>

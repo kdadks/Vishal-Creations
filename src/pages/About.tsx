@@ -68,11 +68,11 @@ export const About: React.FC = () => {
 
   const milestones = [
     { year: '2017', event: 'Company Founded', description: 'Vishal Creations established with a vision to distribute high-performance polymers and specialty engineering plastics.' },
-    { year: '2018', event: 'Industry Partnerships', description: 'Established strong network of suppliers and distributors across India.' },
-    { year: '2020', event: 'Sector Expansion', description: 'Expanded to serve electronics, automotive, and manufacturing industries nationwide.' },
-    { year: '2022', event: 'Product Diversification', description: 'Added Nylon, Polycarbonate, PBT, and mold release agents to product portfolio.' },
-    { year: '2023', event: 'Quality Excellence', description: 'Achieved industry recognition for consistent delivery of premium polymer materials.' },
-    { year: '2024', event: 'Global Vision', description: 'Initiated expansion strategy to tap into global markets beyond conventional materials.' },
+    { year: '2018', event: 'Japanese Partnerships', description: 'Started imports with various Japanese Manufacturers for engineering plastic materials.' },
+    { year: '2020', event: 'Paper Machine Imports', description: 'Sector expansion to Paper machine imports for Napkin Manufacturers.' },
+    { year: '2022', event: 'Trading House Establishment', description: 'Established as a Trading House for PC/POM/Nylon & various other plastic resins plus chemicals.' },
+    { year: '2024', event: 'Sekisui Partnership', description: 'Partnered with M/S Sekisui Chemicals, Japan for Advancell Microspheres Distributorship for PAN India.' },
+    { year: '2025', event: 'Shoe Industry Expansion', description: 'Our Business Associations started expanding for shoe Industry.' },
   ];
 
   return (
@@ -256,7 +256,7 @@ export const About: React.FC = () => {
               },
               {
                 title: 'Premium Materials',
-                description: 'Specialized in Nylon, Polycarbonate, PBT, and advanced mold release agents.',
+                description: 'Specialized in engineering plastic resin and imported chemicals',
                 number: '100%'
               },
             ].map((item, index) => (

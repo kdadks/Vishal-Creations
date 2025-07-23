@@ -14,6 +14,11 @@ To configure email sending functionality, you need to set the following environm
 - **Example**: `your-email-password` or `your-app-password`
 - **Description**: For security, it's recommended to use an App Password instead of your regular password
 
+### 3. RECIPIENT_EMAIL (Optional)
+- **Value**: The email address where contact form submissions should be sent
+- **Example**: `contact@vishalcreations.com`
+- **Description**: If not provided, emails will be sent to the SMTP_USER address
+
 ## How to Set Environment Variables in Netlify:
 
 1. **Log in to your Netlify Dashboard**
@@ -25,6 +30,9 @@ To configure email sending functionality, you need to set the following environm
    
    - Variable name: `SMTP_PASS`
    - Value: `your-email-password-or-app-password`
+   
+   - Variable name: `RECIPIENT_EMAIL` (Optional)
+   - Value: `contact@vishalcreations.com`
 
 ## Setting up App Password for Office365/Outlook:
 

@@ -1,7 +1,7 @@
 # Email Functionality Setup for Vishal Creations Contact Form
 
 ## Overview
-The contact form now sends emails to `contact@vishalcreations.com` using Netlify Functions and Office365 SMTP.
+The contact form now sends emails to your email id using Netlify Functions and Office365 SMTP.
 
 ## Files Added/Modified:
 
@@ -24,6 +24,7 @@ Go to your Netlify site dashboard:
 - Add these variables:
   - `SMTP_USER`: Your Office365 email (e.g., admin@vishalcreations.com)
   - `SMTP_PASS`: Your Office365 app password
+  - `RECIPIENT_EMAIL`: Where contact forms should be sent (e.g., contact@vishalcreations.com)
 
 ### 3. Set up Office365 App Password
 1. Go to https://account.microsoft.com/security
@@ -36,7 +37,7 @@ Go to your Netlify site dashboard:
 - Visit your deployed site
 - Fill out the contact form
 - Submit the form
-- Check that emails are received at contact@vishalcreations.com
+- Check that emails are received at your email id
 
 ## Features:
 

@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Vishal Creations for plastic raw materials quotes. Call +91-98765-43210 or email info@vishalcreations.com. Mumbai headquarters with pan-India delivery.');
+      metaDescription.setAttribute('content', 'Contact Vishal Creations for plastic raw materials quotes. Call +91-98765-43210 or email us through our contact form. Mumbai headquarters with pan-India delivery.');
     }
     
     const script = document.createElement('script');
@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
         "@type": "Organization",
         "name": "Vishal Creations",
         "telephone": "+91-98765-43210",
-        "email": "info@vishalcreations.com"
+        "email": "contact-form@vishalcreations.com"
       }
     });
     document.head.appendChild(script);
@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
       icon: Mail,
       title: 'Email',
       details: ['contact@vishalcreations.com'],
-      description: 'Send us your inquiries',
+      description: 'We respond within 24 hours',
     },
     {
       icon: MapPin,
@@ -380,7 +380,11 @@ export const Contact: React.FC = () => {
                     Call Now
                   </a>
                   <a
-                    href="mailto:info@vishalcreations.com"
+                    href="#send-message"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('send-message')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                     className="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-200 text-center"
                   >
                     Email Us

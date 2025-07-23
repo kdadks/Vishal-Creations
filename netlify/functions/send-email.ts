@@ -131,7 +131,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     // Email options
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: 'contact@vishalcreations.com',
+      to: process.env.RECIPIENT_EMAIL || process.env.SMTP_USER, // Use RECIPIENT_EMAIL or fallback to SMTP_USER
       replyTo: email, // This allows direct reply to the customer
       subject: `New Contact Form Submission - ${inquiryType} from ${company}`,
       text: emailContent,

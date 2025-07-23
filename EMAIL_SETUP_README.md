@@ -57,10 +57,22 @@ Go to your Netlify site dashboard:
 - Reply-to customer email for easy response
 
 ## Local Development:
+
+### Option 1: Using Netlify CLI (Recommended for testing functions)
 1. Copy `.env.example` to `.env`
-2. Fill in your actual SMTP credentials
-3. Run `npm run dev` to test locally
-4. Use Netlify CLI for testing functions: `netlify dev`
+2. Fill in your actual SMTP credentials in `.env`
+3. Run `npm run dev:netlify` to start with Netlify Functions support
+4. Access your site at the URL shown in terminal (usually http://localhost:8888)
+
+### Option 2: Using Vite Dev Server (For UI development)
+1. Run `npm run dev` for regular Vite development
+2. Contact form will work in "development mode" (shows success but doesn't send email)
+3. Check browser console to see form data being logged
+
+### Testing Email Functionality:
+- **Local testing with emails**: Use `npm run dev:netlify` with proper `.env` setup
+- **UI testing only**: Use `npm run dev` (simulates successful submission)
+- **Production testing**: Deploy to Netlify and test there
 
 ## Troubleshooting:
 - Check Netlify Functions logs for errors

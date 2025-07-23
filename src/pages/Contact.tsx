@@ -70,6 +70,35 @@ export const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSubmitError('');
     
+    // Check if we're in development mode
+    const isDevelopment = import.meta.env.DEV;
+    
+    if (isDevelopment) {
+      // In development mode, simulate successful submission
+      console.log('Development mode - Form data:', formData);
+      
+      // Simulate network delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setIsSubmitted(true);
+      setIsSubmitting(false);
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          inquiryType: '',
+          message: '',
+        });
+      }, 3000);
+      
+      return;
+    }
+    
     try {
       const response = await fetch('/.netlify/functions/send-email', {
         method: 'POST',

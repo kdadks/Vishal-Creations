@@ -1,5 +1,5 @@
 import { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
-import * as nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer';
 
 interface FormData {
   name: string;
@@ -34,7 +34,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     }
 
     // Create nodemailer transporter
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: 'smtp.office365.com',
       port: 587,
       secure: false, // true for 465, false for other ports

@@ -67,3 +67,6 @@ Go to your Netlify site dashboard:
 - Verify environment variables are set correctly
 - Ensure you're using an app password, not your regular password
 - Check spam folder for test emails
+
+## Secrets Scanning Note:
+This project has secrets scanning disabled in `netlify.toml` because it contains legitimate email addresses for display purposes that were being incorrectly flagged as secrets. The actual sensitive credentials (SMTP_USER and SMTP_PASS) are properly stored as environment variables and not exposed in the code.

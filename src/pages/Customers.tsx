@@ -35,13 +35,13 @@ export const Customers: React.FC = () => {
 
   const customers = [
     {
-      name: 'Bata Shoe',
+      name: 'Point Footwear',
       industry: 'Footwear Manufacturing',
-      location: 'Mumbai, Maharashtra',
+      location: 'Kundli, Haryana',
       partnership: '2020',
       growth: '120%',
-      testimonial: 'Vishal Creations provides excellent quality materials for our shoe manufacturing Bata Shoe. Their reliability has been crucial to our success.',
-      contact: 'Mohit Diwan, Production Manager',
+      testimonial: 'Vishal Creations provides excellent quality materials for our shoe sole manufacturing for various OEMs like BATA. Their reliability has been crucial to our success.',
+      contact: 'Production Manager',
       logo: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
       rating: 5
     },
@@ -57,8 +57,8 @@ export const Customers: React.FC = () => {
       rating: 5
     },
     {
-      name: 'Singhal Polytech (POM Zipper Manufacturer)',
-      industry: 'Safety Equipment',
+      name: 'Singhal Polytech',
+      industry: 'Zipper Manufacturer',
       location: 'Gurgram, Haryana',
       partnership: '2021',
       growth: '180%',
@@ -68,27 +68,17 @@ export const Customers: React.FC = () => {
       rating: 5
     },
     {
-      name: 'BIC',
+      name: 'BIC CELLO',
       industry: 'Stationery Manufacturing',
-      location: 'Delhi, NCR',
+      location: 'Damon, Maharashtra',
       partnership: '2022',
       growth: '200%',
       testimonial: 'From small-scale operations to becoming a major player in stationery, Vishal Creations has been with us every step of the way.',
       contact: 'Production Head',
       logo: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
       rating: 5
-    },
-    {
-      name: 'ABS Construction Pvt Ltd',
-      industry: 'Construction Materials',
-      location: 'Noida, Uttar Pradesh',
-      partnership: '2018',
-      growth: '140%',
-      testimonial: 'The technical expertise and material consistency have enabled us to achieve precision in our PC sheet manufacturing processes.',
-      contact: 'Production Head',
-      logo: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
-      rating: 5
-    }
+    },  
+
   ];
 
   const customerBenefits = [

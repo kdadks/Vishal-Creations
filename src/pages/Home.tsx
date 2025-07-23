@@ -82,7 +82,7 @@ export const Home: React.FC = () => {
               &times;
             </button>
             <img
-              src="/Event final.png"
+              src="/Flyer_VC1 (3).png"
               alt="Event"
               className="rounded-lg w-full h-auto object-contain mb-2"
               style={{ maxHeight: '80vh' }}
@@ -111,7 +111,7 @@ export const Home: React.FC = () => {
                   >
                     <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-2 shadow-lg hover:bg-opacity-30 transition-all duration-300">
                       <img
-                        src="/Event final.png"
+                        src="/Flyer_VC1 (3).png"
                         alt="Event"
                         className="w-32 h-24 rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300 object-cover"
                       />
@@ -259,7 +259,7 @@ export const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="/Collarge.png"
+                src="/Hero 2.jpg"
                 alt="Industrial plastic materials"
                 className="rounded-lg shadow-lg w-full h-auto max-w-sm mx-auto object-contain"
               />

@@ -97,7 +97,7 @@ export const About: React.FC = () => {
                 Established in 2017, Vishal Creations is a trusted name in the distribution and trading of high-performance polymers and specialty engineering plastics in India. What began as a focused venture has evolved into a specialized distributor serving critical industries across the nation.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                We serve industries such as electronics, automotive, and manufacturing, offering a wide range of premium materials including Nylon, Polycarbonate, PBT, and mold release agents, designed to meet diverse industrial requirements. Our strong network of suppliers and distributors across the country ensures consistent delivery of quality products to our clientele.
+                We serve industries such as electronics, automotive, and manufacturing, offering a wide range of premium materials including ABS, Nylon, Polycarbonate, PBT, GPPS  and other engineering plastics, designed to meet diverse industrial requirements. Our strong network of suppliers and distributors across the country ensures consistent delivery of quality products to our clientele.
               </p>
               <p className="text-lg text-gray-600">
                 Driven by a vision of growth and innovation, Vishal Creations is expanding its horizons beyond conventional plastic raw materials to tap into global markets. By prioritizing quality and leveraging our expertise, we are committed to meeting the evolving demands of modern industries while establishing a reputation for reliability and excellence in the polymer distribution sector.

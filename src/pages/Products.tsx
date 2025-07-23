@@ -80,6 +80,17 @@ export const Products: React.FC = () => {
   };
 
   const products = [
+   {
+      id: 9,
+      name: 'Advancell Microspheres',
+      category: 'advanced',
+      image: '/Advance.jpg',
+      description: 'Premium expanded molecular resin specifically engineered for shoe manufacturing applications.',
+      applications: ['Shoe Soles', 'Athletic Footwear', 'Safety Boots', 'Casual Footwear'],
+      specifications: ['Density: 0.15-0.25 g/cm³', 'Compression Set: <25%', 'Hardness: 35-55 Shore A'],
+      price: 'Request Quote',
+      minOrder: '100 Kg',
+    },
     {
       id: 1,
       name: 'PVC Suspension Grade',
@@ -93,10 +104,10 @@ export const Products: React.FC = () => {
     },
     {
       id: 2,
-      name: 'PP Homopolymer',
+      name: 'Poly Carbonate',
       category: 'pp',
       image: '/polypropylene.webp',
-      description: 'Premium polypropylene homopolymer for injection molding applications.',
+      description: 'Premium Ply Carbonate for automoblie, Pen industries.',
       applications: ['Injection Molding', 'Automotive Parts', 'Packaging'],
       specifications: ['MFI: 3-35 g/10min', 'Density: 0.90-0.91 g/cm³', 'Flexural Modulus: 1400-1600 MPa'],
       price: 'Request Quote',
@@ -104,26 +115,16 @@ export const Products: React.FC = () => {
     },
     {
       id: 3,
-      name: 'HDPE Blow Molding Grade',
+      name: 'POM',
       category: 'pe',
       image: '/HDPE.webp',
-      description: 'Superior HDPE grade specifically designed for blow molding applications.',
+      description: 'Superior POM grade specifically designed for blow molding applications.',
       applications: ['Bottles', 'Containers', 'Tanks'],
       specifications: ['Density: 0.950-0.965 g/cm³', 'Melt Index: 0.3-0.7 g/10min', 'ESCR: F50 > 1000 h'],
       price: 'Request Quote',
       minOrder: '1 Ton',
     },
-    {
-      id: 4,
-      name: 'LDPE Film Grade',
-      category: 'pe',
-      image: '/LDPE.jpg',
-      description: 'Low-density polyethylene ideal for film and packaging applications.',
-      applications: ['Films', 'Bags', 'Packaging'],
-      specifications: ['Density: 0.918-0.930 g/cm³', 'Melt Index: 0.2-2.0 g/10min', 'Dart Impact: >150 g'],
-      price: 'Request Quote',
-      minOrder: '500 Kg',
-    },
+    
     {
       id: 5,
       name: 'GPPS General Purpose',
@@ -147,17 +148,6 @@ export const Products: React.FC = () => {
       minOrder: '250 Kg',
     },
     {
-      id: 7,
-      name: 'Calcium Carbonate',
-      category: 'additives',
-      image: 'cac03.jpeg',
-      description: 'High-quality calcium carbonate filler for cost-effective plastic production.',
-      applications: ['Filler', 'Reinforcement', 'Cost Reduction'],
-      specifications: ['Particle Size: 2-5 μm', 'Whiteness: >95%', 'Moisture: <0.3%'],
-      price: 'Request Quote',
-      minOrder: '1 Ton',
-    },
-    {
       id: 8,
       name: 'Titanium Dioxide',
       category: 'additives',
@@ -168,17 +158,7 @@ export const Products: React.FC = () => {
       price: 'Request Quote',
       minOrder: '25 Kg',
     },
-        {
-      id: 9,
-      name: 'Advancell Microspheres',
-      category: 'advanced',
-      image: '/Advance.jpg',
-      description: 'Premium expanded molecular resin specifically engineered for shoe manufacturing applications.',
-      applications: ['Shoe Soles', 'Athletic Footwear', 'Safety Boots', 'Casual Footwear'],
-      specifications: ['Density: 0.15-0.25 g/cm³', 'Compression Set: <25%', 'Hardness: 35-55 Shore A'],
-      price: 'Request Quote',
-      minOrder: '100 Kg',
-    },
+        
         {
       id: 10,
       name: 'Industrial Extrusion Machines',

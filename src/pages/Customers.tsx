@@ -40,26 +40,26 @@ export const Customers: React.FC = () => {
       location: 'Mumbai, Maharashtra',
       partnership: '2020',
       growth: '120%',
-      testimonial: 'Vishal Creations provides excellent quality materials for our shoe manufacturing. Their reliability has been crucial to our success.',
-      contact: 'Production Manager',
+      testimonial: 'Vishal Creations provides excellent quality materials for our shoe manufacturing Bata Shoe. Their reliability has been crucial to our success.',
+      contact: 'Mohit Diwan, Production Manager',
       logo: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
       rating: 5
     },
     {
-      name: 'Sole Manufacturer',
-      industry: 'Footwear Components',
-      location: 'Chennai, Tamil Nadu',
+      name: 'Sujata Juicer Jar ',
+      industry: 'Plastic Manufacturing',
+      location: 'Delhi',
       partnership: '2019',
       growth: '150%',
       testimonial: 'The quality of materials and customer service is exceptional. We have expanded our operations significantly with their reliable supply chain support.',
-      contact: 'Operations Manager',
+      contact: 'Plant Head',
       logo: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
       rating: 5
     },
     {
-      name: 'Helmet Customer',
+      name: 'Singhal Polytech (POM Zipper Manufacturer)',
       industry: 'Safety Equipment',
-      location: 'Pune, Maharashtra',
+      location: 'Gurgram, Haryana',
       partnership: '2021',
       growth: '180%',
       testimonial: 'Their materials have helped us maintain the highest quality standards in our helmet manufacturing. Excellent technical support team.',
@@ -68,7 +68,7 @@ export const Customers: React.FC = () => {
       rating: 5
     },
     {
-      name: 'Pen Customer',
+      name: 'BIC',
       industry: 'Stationery Manufacturing',
       location: 'Delhi, NCR',
       partnership: '2022',
@@ -79,13 +79,13 @@ export const Customers: React.FC = () => {
       rating: 5
     },
     {
-      name: 'PC Sheet Customer',
+      name: 'ABS Construction Pvt Ltd',
       industry: 'Construction Materials',
-      location: 'Bangalore, Karnataka',
+      location: 'Noida, Uttar Pradesh',
       partnership: '2018',
       growth: '140%',
       testimonial: 'The technical expertise and material consistency have enabled us to achieve precision in our PC sheet manufacturing processes.',
-      contact: 'Technical Director',
+      contact: 'Production Head',
       logo: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop',
       rating: 5
     }
@@ -257,7 +257,8 @@ export const Customers: React.FC = () => {
         </div>
       </section>
 
-      {/* Customer Testimonials Carousel */}
+      {/*
+      Customer Testimonials Carousel
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -285,6 +286,7 @@ export const Customers: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-16 bg-purple-600 text-white">

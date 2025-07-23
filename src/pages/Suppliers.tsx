@@ -49,7 +49,7 @@ export const Suppliers: React.FC = () => {
       partnership: '2018',
       certification: 'ISO 14001',
       description: 'Global leader in petrochemicals and diversified manufacturing with innovative polymer solutions.',
-      logo: '/Mit Pla.png'
+      logo: '/mitsubishi-logo.jpg'
     },
     {
       name: 'SEKISUI CHEMICAL CO., LTD.',
@@ -99,7 +99,7 @@ export const Suppliers: React.FC = () => {
     {
       name: 'Polyurethane Systems',
       location: 'Germany / USA',
-      specialization: 'Polyurethane Elastomers',
+      specialization: 'Polyurethane Elastomers, Adhesives',
       partnership: '2021',
       certification: 'ISO 9001:2015',
       description: 'Specialized manufacturer of polyurethane elastomer systems, offering versatile solutions for industrial applications requiring durability and flexibility.',

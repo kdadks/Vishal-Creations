@@ -7,7 +7,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ className = '' }) => {
   return (
     <img
-      src="/Logo.jpeg"
+      src="/New Logo.jpeg"
       alt="Vishal Creations Logo"
       className={className}
       style={{ objectFit: 'contain' }}

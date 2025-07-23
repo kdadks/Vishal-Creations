@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Truck, Award, Users, CheckCircle, Star } from 'lucide-react';
+import { ArrowRight, Shield, Truck, Award, Users, CheckCircle } from 'lucide-react';
 // ...existing code...
 
 export const Home: React.FC = () => {
@@ -54,33 +54,12 @@ export const Home: React.FC = () => {
     {
       icon: Award,
       title: 'Industry Expert',
-      description: '15+ years of experience in plastic raw materials supply.',
+      description: '7+ years of experience in plastic raw materials supply.',
     },
     {
       icon: Users,
       title: 'Trusted Partner',
-      description: 'Serving 10+ manufacturers with reliable supply chain solutions.',
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: 'Rajesh Kumar',
-      company: 'Plastic Industries Ltd.',
-      message: 'Vishal Creations has been our trusted partner for over 5 years. Their quality and service are exceptional.',
-      rating: 5,
-    },
-    {
-      name: 'Priya Sharma',
-      company: 'Modern Packaging Co.',
-      message: 'Reliable delivery and competitive pricing. They understand our business needs perfectly.',
-      rating: 5,
-    },
-    {
-      name: 'Amit Patel',
-      company: 'Tech Plastics Pvt. Ltd.',
-      message: 'Outstanding quality materials and excellent customer support. Highly recommended!',
-      rating: 5,
+      description: ' Leading global supplier of PVC raw materials, Industry Chemicals & Footwear Materials in India.',
     },
   ];
 
@@ -103,7 +82,7 @@ export const Home: React.FC = () => {
               &times;
             </button>
             <img
-              src="/event.jpeg"
+              src="/Flyer_VC1.png"
               alt="Event"
               className="rounded-lg w-full h-auto object-contain mb-2"
               style={{ maxHeight: '80vh' }}
@@ -132,7 +111,7 @@ export const Home: React.FC = () => {
                   >
                     <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-2 shadow-lg hover:bg-opacity-30 transition-all duration-300">
                       <img
-                        src="/event.jpeg"
+                        src="/Flyer_VC1.png"
                         alt="Event"
                         className="w-32 h-24 rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300 object-cover"
                       />
@@ -185,7 +164,7 @@ export const Home: React.FC = () => {
             <div className="lg:col-span-5">
               {/* Main Hero Image */}
               <img
-                src="/Hero.png"
+                src="/Hero 2.jpg"
                 alt="Vishal Creations Hero"
                 className="w-full h-auto max-h-[400px] object-contain mx-auto rounded-2xl"
               />
@@ -250,16 +229,16 @@ export const Home: React.FC = () => {
                 Leading Supplier of Plastic & Chemical Raw Materials
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Vishal Creations has been at the forefront of the plastic & chemical raw materials industry for over 8 years. We specialize in providing high-quality materials that meet the diverse needs of manufacturers across various industries.
+                Vishal Creations has been at the forefront of the plastic & chemical raw materials industry for over 7+ years. We specialize in providing high-quality materials that meet the diverse needs of manufacturers across various industries.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span className="text-gray-700">ISO 9001:2015 Certified</span>
+                  <span className="text-gray-700">Quality Certified</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="text-green-500" size={20} />
-                  <span className="text-gray-700">10+ Satisfied Clients</span>
+                  <span className="text-gray-700">Satisfied Clients</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="text-green-500" size={20} />
@@ -328,7 +307,7 @@ export const Home: React.FC = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">Product Categories</span>
-                    <span className="text-sm font-bold text-blue-600">15+</span>
+                    <span className="text-sm font-bold text-blue-600"></span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-gradient-to-r from-blue-600 to-green-600 h-2 rounded-full w-4/5"></div>
@@ -373,7 +352,7 @@ export const Home: React.FC = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">Global Partners</span>
-                    <span className="text-sm font-bold text-green-600">10+</span>
+                    <span className="text-sm font-bold text-green-600"></span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-gradient-to-r from-green-600 to-blue-600 h-2 rounded-full w-5/6"></div>
@@ -418,7 +397,7 @@ export const Home: React.FC = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-600">Active Clients</span>
-                    <span className="text-sm font-bold text-blue-600">10+</span>
+                    <span className="text-sm font-bold text-blue-600"></span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full w-full"></div>
@@ -462,7 +441,8 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials - Commented Out */}
+      {/*
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -489,6 +469,73 @@ export const Home: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      */}
+
+      {/* Prestigious Customer Logo Gallery */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Our Prestigious Customers 
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Trusted by leading brands and manufacturers across India for quality, reliability, and excellent service.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center">
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/VIP.jpeg"
+                alt="VIP"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/Udygoi.jpeg"
+                alt="Udygoi"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/Sujata.jpeg"
+                alt="Sujata"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/Steelbird.jpeg"
+                alt="Steelbird"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/Samsonite.jpeg"
+                alt="Samsonite"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/BIC.jpeg"
+                alt="BIC"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center h-24">
+              <img
+                src="/Calco.jpeg"
+                alt="Calco"
+                className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>

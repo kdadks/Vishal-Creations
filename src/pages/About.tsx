@@ -70,7 +70,7 @@ export const About: React.FC = () => {
     { year: '2017', event: 'Company Founded', description: 'Vishal Creations established with a vision to distribute high-performance polymers and specialty engineering plastics.' },
     { year: '2018', event: 'Japanese Partnerships', description: 'Started imports with various Japanese Manufacturers for engineering plastic materials.' },
     { year: '2020', event: 'Paper Machine Imports', description: 'Sector expansion to Paper machine imports for Napkin Manufacturers.' },
-    { year: '2022', event: 'Trading House Establishment', description: 'Established as a Trading House for PC/POM/Nylon & various other plastic resins plus chemicals.' },
+    { year: '2022', event: 'Trading House Establishment', description: 'Established as a Trading House for engineering plastic resins and various chemicals.' },
     { year: '2024', event: 'Sekisui Partnership', description: 'Partnered with M/S Sekisui Chemicals, Japan for Advancell Microspheres Distributorship for PAN India.' },
     { year: '2025', event: 'Shoe Industry Expansion', description: 'Our Business Associations started expanding for shoe Industry.' },
   ];
@@ -105,9 +105,9 @@ export const About: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="/Hero.png"
+                src="/Hero 2.jpg"
                 alt="Industrial facility"
-                className="rounded-lg shadow-lg"
+                className="w-full max-w-xl md:max-w-2xl rounded-lg shadow-lg"
               />
             </div>
           </div>

@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+91 7503131359</span>
+                <span className="whitespace-nowrap">+91 7503131359</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />

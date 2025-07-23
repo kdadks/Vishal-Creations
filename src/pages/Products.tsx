@@ -53,7 +53,7 @@ export const Products: React.FC = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [activeTab, setActiveTab] = useState('plastics');
+  // const [activeTab, setActiveTab] = useState('plastics');
 
   const categories = [
     { id: 'all', name: 'All Products' },
@@ -63,21 +63,17 @@ export const Products: React.FC = () => {
     { id: 'ps', name: 'Polystyrene' },
     { id: 'abs', name: 'ABS Resin' },
     { id: 'additives', name: 'Additives' },
-  ];
-
-  const advancedCategories = [
-    { id: 'all', name: 'All Products' },
     { id: 'advanced', name: 'Advanced Resins' },
     { id: 'machinery', name: 'Machinery' },
     { id: 'packaging', name: 'Packaging Solutions' },
   ];
 
-  const currentCategories = activeTab === 'plastics' ? categories : advancedCategories;
+  const currentCategories = categories;
 
   // Reset category when switching tabs
-  React.useEffect(() => {
-    setSelectedCategory('all');
-  }, [activeTab]);
+  // React.useEffect(() => {
+  //   setSelectedCategory('all');
+  // }, [activeTab]);
 
   const handleEnquiry = () => {
     navigate('/contact#send-message');
@@ -172,8 +168,53 @@ export const Products: React.FC = () => {
       price: 'Request Quote',
       minOrder: '25 Kg',
     },
+        {
+      id: 9,
+      name: 'Advancell Microspheres',
+      category: 'advanced',
+      image: '/Advance.jpg',
+      description: 'Premium expanded molecular resin specifically engineered for shoe manufacturing applications.',
+      applications: ['Shoe Soles', 'Athletic Footwear', 'Safety Boots', 'Casual Footwear'],
+      specifications: ['Density: 0.15-0.25 g/cm³', 'Compression Set: <25%', 'Hardness: 35-55 Shore A'],
+      price: 'Request Quote',
+      minOrder: '100 Kg',
+    },
+        {
+      id: 10,
+      name: 'Industrial Extrusion Machines',
+      category: 'machinery',
+      image: 'Thy.webp',
+      description: 'High-performance extrusion machines for plastic processing and manufacturing.',
+      applications: ['Pipe Production', 'Profile Extrusion', 'Sheet Manufacturing', 'Film Production'],
+      specifications: ['Capacity: 50-500 kg/hr', 'Screw Diameter: 45-120mm', 'Temperature Control: ±2°C'],
+      price: 'Request Quote',
+      minOrder: '1 Unit',
+    },
+    {
+      id: 11,
+      name: 'China Paper Machines',
+      category: 'machinery',
+      image: 'Paper Machine.jpeg',
+      description: 'Advanced paper manufacturing machines imported from China for high-quality paper production.',
+      applications: ['Kraft Paper', 'Corrugated Paper', 'Tissue Paper', 'Cardboard'],
+      specifications: ['Width: 1.5-3.5m', 'Speed: 50-200 m/min', 'Basis Weight: 80-400 g/m²'],
+      price: 'Request Quote',
+      minOrder: '1 Unit',
+    },
+    {
+      id: 12,
+      name: 'Tape Manufacturing',
+      category: 'packaging',
+      image: 'Tape.jpg',
+      description: 'Complete BOPP tape manufacturing solution including raw materials and equipment.',
+      applications: ['Packaging Tape', 'Adhesive Tape', 'Sealing Tape', 'Industrial Tape'],
+      specifications: ['Thickness: 35-65 microns', 'Width: 12-72mm', 'Adhesion: >8 N/25mm'],
+      price: 'Request Quote',
+      minOrder: '500 Kg',
+    },
   ];
 
+  /*
   const advancedProducts = [
     {
       id: 9,
@@ -220,8 +261,9 @@ export const Products: React.FC = () => {
       minOrder: '500 Kg',
     },
   ];
+  */
 
-  const currentProducts = activeTab === 'plastics' ? products : advancedProducts;
+  const currentProducts = products;
   
   const filteredProducts = currentProducts.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -237,45 +279,12 @@ export const Products: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Products</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
-            {activeTab === 'plastics' 
-              ? 'Comprehensive range of premium plastic raw materials for all your manufacturing needs.'
-              : 'Advanced products, machinery, and specialized solutions for industrial applications.'
-            }
+            Comprehensive range of premium plastic raw materials, advanced resins, machinery, and packaging solutions for all your manufacturing needs.
           </p>
         </div>
       </section>
 
-      {/* Tab Navigation */}
-      <section className="py-8 bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center">
-            <div className="flex bg-gray-100 rounded-lg p-1">
-              <button
-                onClick={() => setActiveTab('plastics')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                  activeTab === 'plastics'
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                <Package className="inline-block mr-2" size={20} />
-                Plastic Raw Materials
-              </button>
-              <button
-                onClick={() => setActiveTab('advanced')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                  activeTab === 'advanced'
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'text-gray-600 hover:text-gray-800'
-                }`}
-              >
-                <Cog className="inline-block mr-2" size={20} />
-                Advanced Products & Machinery
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Tab Navigation removed as only one tab remains */}
 
       {/* Search and Filter */}
       <section className="py-8 bg-gray-50">
@@ -323,7 +332,6 @@ export const Products: React.FC = () => {
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
                   <p className="text-gray-600 mb-4 text-sm">{product.description}</p>
-                  
                   <div className="mb-4">
                     <h4 className="font-semibold text-gray-700 mb-2">Applications:</h4>
                     <div className="flex flex-wrap gap-1">
@@ -334,16 +342,6 @@ export const Products: React.FC = () => {
                       ))}
                     </div>
                   </div>
-
-                  <div className="mb-4">
-                    <h4 className="font-semibold text-gray-700 mb-2">Key Specifications:</h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      {product.specifications.slice(0, 2).map((spec, index) => (
-                        <li key={index}>• {spec}</li>
-                      ))}
-                    </ul>
-                  </div>
-
                   <div className="flex w-full mt-auto">
                     <button 
                       onClick={handleEnquiry}

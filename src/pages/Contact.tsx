@@ -151,7 +151,7 @@ export const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['Plot No. K11 Old Plot NO 45 Khasra No. 13/17,rd Floor Adhyapak Nagar,Najafgarh Road Nangloi,West Delhi, Delhi, 110041'],
+      details: ['Plot No. K11 Old Plot NO 45 Khasra No. 13/17,3rd Floor Adhyapak Nagar,Najafgarh Road Nangloi,West Delhi, Delhi, 110041'],
       description: 'Visit our headquarters',
     },
     {

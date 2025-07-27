@@ -82,7 +82,7 @@ export const Products: React.FC = () => {
   const products = [
    {
       id: 9,
-      name: 'Advancell Microspheres',
+      name: 'Microspheres (Advancell)',
       category: 'advanced',
       image: '/Advance.jpg',
       description: 'Premium expanded molecular resin specifically engineered for shoe manufacturing applications.',
